@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "esnext"],
+    "module": "es6",
+    "outDir": "build",
+    "removeComments": true,
+    "target": "es2018"
+  },
+  "include": ["src/**/*"]
+}
