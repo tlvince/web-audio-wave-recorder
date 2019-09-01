@@ -5,7 +5,9 @@
   "license": "MIT",
   "scripts": {
     "build": "rollup -c -f esm",
-    "build:browser": "rollup -c -f iife -n WaveRecorder"
+    "build:browser": "rollup -c -f iife -n WaveRecorder",
+    "build:example": "cp -R example/* dist",
+    "build:cname": "echo web-audio-wave-recorder.tlvince.com > dist/CNAME"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "1.13.0",
