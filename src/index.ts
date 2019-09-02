@@ -1,4 +1,4 @@
-import { flattenArray, writeUTFBytes, interleave, encodeWav } from './utils'
+import { flattenArray, interleave, encodeWav } from './utils'
 
 export interface RecordingState {
   state: {
