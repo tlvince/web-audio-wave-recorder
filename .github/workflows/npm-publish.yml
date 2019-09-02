@@ -21,7 +21,7 @@ jobs:
           args: build
 
       - name: Publish
-        uses: mikeal/merge-release@v1.9.2
+        uses: mikeal/merge-release@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
