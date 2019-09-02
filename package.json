@@ -1,6 +1,7 @@
 {
   "name": "web-audio-wave-recorder",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "description": "Record wav files using Web Audio APIs",
   "main": "dist/web-audio-wave-recorder.js",
   "license": "MIT",
   "scripts": {
@@ -9,6 +10,21 @@
     "build:example": "cp -R example/* dist",
     "build:cname": "echo web-audio-wave-recorder.tlvince.com > dist/CNAME"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tlvince/web-audio-wave-recorder.git"
+  },
+  "keywords": [
+    "audio",
+    "wav",
+    "wave",
+    "microphone"
+  ],
+  "author": "Tom Vincent <git@tlvince.com> (https://tlvince.com)",
+  "bugs": {
+    "url": "https://github.com/tlvince/web-audio-wave-recorder/issues"
+  },
+  "homepage": "https://github.com/tlvince/web-audio-wave-recorder#readme",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "1.13.0",
     "@typescript-eslint/parser": "1.13.0",
