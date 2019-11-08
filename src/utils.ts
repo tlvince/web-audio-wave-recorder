@@ -5,7 +5,7 @@ export const flattenArray = (
   const result = new Float32Array(recordingLength)
   let offset = 0
   for (let i = 0; i < channelBuffer.length; i++) {
-    let buffer = channelBuffer[i]
+    const buffer = channelBuffer[i]
     result.set(buffer, offset)
     offset += buffer.length
   }
@@ -52,7 +52,7 @@ export const encodeWav = ({
   sampleRate,
 }: WavParams): DataView => {
   const buffer = new ArrayBuffer(44 + samples.length * 2)
-  let view = new DataView(buffer)
+  const view = new DataView(buffer)
 
   // RIFF chunk descriptor
   writeUTFBytes(view, 0, 'RIFF')
@@ -75,7 +75,7 @@ export const encodeWav = ({
 
   // write the PCM samples
   let index = 44
-  for (var i = 0; i < samples.length; i++) {
+  for (let i = 0; i < samples.length; i++) {
     view.setInt16(index, samples[i] * (0x7fff * volume), true)
     index += 2
   }

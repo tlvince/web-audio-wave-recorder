@@ -1,10 +1,7 @@
-name: Build and Publish
-on:
-  push:
-    branches:
-      - master
+name: Pull Requests
+on: pull_request
 jobs:
-  build-and-publish:
+  build-and-test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -24,9 +21,3 @@ jobs:
         uses: Borales/actions-yarn@1.1.0
         with:
           args: build
-
-      - name: Publish
-        uses: mikeal/merge-release@2.2.6
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
