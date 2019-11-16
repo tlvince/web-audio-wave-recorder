@@ -7,10 +7,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
 
-      - name: Install
-        uses: Borales/actions-yarn@1.1.0
-        with:
-          args: install
+      - name: npm or Yarn install with caching
+        uses: bahmutov/npm-install@v1.1.0
 
       - name: Lint
         uses: Borales/actions-yarn@1.1.0

@@ -10,10 +10,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
 
-      - name: Install
-        uses: Borales/actions-yarn@1.1.0
-        with:
-          args: install
+      - name: npm or Yarn install with caching
+        uses: bahmutov/npm-install@v1.1.0
 
       - name: Lint
         uses: Borales/actions-yarn@1.1.0
@@ -25,8 +23,35 @@ jobs:
         with:
           args: build
 
-      - name: Publish
-        uses: mikeal/merge-release@2.2.6
+      - name: Semantic Release
+        uses: cycjimmy/semantic-release-action@v2
+        id: semantic
+        with:
+          branch: master
+          dry_run: true
+          extra_plugins: |
+            @semantic-release/git
+            @semantic-release/changelog
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js with GitHub Package Registry
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          registry-url: 'https://npm.pkg.github.com'
+          scope: 'tlvince'
+
+      - name: Publish To GitHub Package Registry
+        if: steps.semantic.outputs.new_release_published == 'true'
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - name: Push updates to branch for major version
+        if: steps.semantic.outputs.new_release_published == 'true'
+        run: 'git push https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git HEAD:refs/heads/v${{steps.semantic.outputs.new_release_major_version}}'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
