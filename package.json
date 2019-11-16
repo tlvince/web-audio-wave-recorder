@@ -1,6 +1,6 @@
 {
   "name": "web-audio-wave-recorder",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "Record wav files using Web Audio APIs",
   "main": "dist/web-audio-wave-recorder.js",
   "license": "MIT",
