@@ -11,11 +11,7 @@ jobs:
         uses: bahmutov/npm-install@v1.1.0
 
       - name: Lint
-        uses: Borales/actions-yarn@1.1.0
-        with:
-          args: lint
+        run: yarn lint
 
       - name: Build
-        uses: Borales/actions-yarn@1.1.0
-        with:
-          args: build
+        run: yarn build
