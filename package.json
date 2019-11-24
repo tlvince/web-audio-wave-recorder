@@ -9,7 +9,10 @@
     "build:browser": "rollup -c -f iife -n WaveRecorder",
     "build:example": "cp -R example/* dist",
     "build:cname": "echo web-audio-wave-recorder.tlvince.com > dist/CNAME",
-    "lint": "eslint --ext ts src && prettier --check '*.{js,json,md}' 'src/**/*.ts'",
+    "lint": "yarn eslint && yarn prettier --check",
+    "lint:fix": "yarn eslint --fix && yarn prettier --write",
+    "eslint": "eslint '**/*.{js,jsx,ts,tsx,json}'",
+    "prettier": "prettier '**/*.{js,jsx,ts,tsx,json,css,md}'",
     "test": "yarn lint"
   },
   "repository": {
