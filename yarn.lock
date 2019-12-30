@@ -864,21 +864,21 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-eslint-config-prettier@6.8.0:
-  version "6.8.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.8.0.tgz#36bd7559dcef9f97d7596779b38e6a879abb89d3"
-  integrity sha512-aq4M7mjjVregZ2l45O9qz6Mv6f5zVMl/IqfmUL8hNOoDAzVKYMhYPJytbqE/lPIVO1iMDXIFqjiEE59BfJZpZw==
+eslint-config-prettier@6.9.0:
+  version "6.9.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.9.0.tgz#430d24822e82f7deb1e22a435bfa3999fae4ad64"
+  integrity sha512-k4E14HBtcLv0uqThaI6I/n1LEqROp8XaPu6SO9Z32u5NlGRC07Enu1Bh2KEFw4FNHbekH8yzbIU9kUGxbiGmCA==
   dependencies:
     get-stdin "^6.0.0"
 
-eslint-config-tlvince@2.0.39:
-  version "2.0.39"
-  resolved "https://registry.yarnpkg.com/eslint-config-tlvince/-/eslint-config-tlvince-2.0.39.tgz#7d79ba3c5c3e9bb7b93e7d9865528cb2fd4235be"
-  integrity sha512-nEErzP2N3ioypjK0nC8E5wAgIKC6wjPwtxKzoLpiFDkOeyZrVTgYn+HhSnh0Kbxb6o/NB0smG6jzeEfVT5gmQA==
+eslint-config-tlvince@2.0.40:
+  version "2.0.40"
+  resolved "https://registry.yarnpkg.com/eslint-config-tlvince/-/eslint-config-tlvince-2.0.40.tgz#32038af79fa472c7aadaf35a47fbabbcece4e18e"
+  integrity sha512-fdIGTX0rhbq+WVdWKWHh5Ha6/aFzQvOnFBX7sMVquo9WDcDYrNyymRX+XTfbXpy3BAmFqVhGtxh0iRlhxu/9fw==
   dependencies:
     "@typescript-eslint/eslint-plugin" "2.13.0"
     "@typescript-eslint/parser" "2.13.0"
-    eslint-config-prettier "6.8.0"
+    eslint-config-prettier "6.9.0"
     eslint-plugin-import "2.19.1"
     eslint-plugin-jest "23.1.1"
     eslint-plugin-prettier "3.1.2"
