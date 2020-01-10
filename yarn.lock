@@ -938,10 +938,10 @@ eslint-config-prettier@6.9.0:
   dependencies:
     get-stdin "^6.0.0"
 
-eslint-config-tlvince@2.0.50:
-  version "2.0.50"
-  resolved "https://registry.yarnpkg.com/eslint-config-tlvince/-/eslint-config-tlvince-2.0.50.tgz#eb3fb3f8449a7c038df4d924c8f4537671728516"
-  integrity sha512-WP01sFy0RXNXzJj8ool+UtcyXIttWkB1dak13WI/Pd+ZkSlh58sfDbthR8Uii8U8aSMP4Y6khd6K7XIj0gAtYA==
+eslint-config-tlvince@2.0.51:
+  version "2.0.51"
+  resolved "https://registry.yarnpkg.com/eslint-config-tlvince/-/eslint-config-tlvince-2.0.51.tgz#656891f4d4e4aada87cffdf970de1aad711c5f5b"
+  integrity sha512-OW78S4dkNqmJsh8Cbo3CkEfrH5C2fKnaxOF/ZOQ6xY2m0cO/e8r32QRis9Pn0y5DTRMaZWrlxYsi/d7wA0Y/lQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "2.15.0"
     "@typescript-eslint/parser" "2.15.0"
