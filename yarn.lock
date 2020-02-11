@@ -857,16 +857,16 @@ eslint-config-prettier@6.10.0:
   dependencies:
     get-stdin "^6.0.0"
 
-eslint-config-tlvince@2.0.78:
-  version "2.0.78"
-  resolved "https://registry.yarnpkg.com/eslint-config-tlvince/-/eslint-config-tlvince-2.0.78.tgz#e46d1e3784b142d4c17a3ce9dd06ec42f5c1a968"
-  integrity sha512-AjyvcrisR6hZHUGpCYaqd2tgzR1vrWkD4osNd3uNJgNoYS9U/sw4qj3cpV3P3YCPhfLJWd8JvWDqvH3JRxgztw==
+eslint-config-tlvince@2.0.79:
+  version "2.0.79"
+  resolved "https://registry.yarnpkg.com/eslint-config-tlvince/-/eslint-config-tlvince-2.0.79.tgz#87823e7e9f1262f862cf0f465d2684460683b0dc"
+  integrity sha512-S3WWEj6Cj90jLBv6zN2e/4BmYjaLGaNEFALUgZ9ae/ynZL+3mAMT/zhhyYOCy6zt3eETtrSnqzEyjYVdOWX0/g==
   dependencies:
     "@typescript-eslint/eslint-plugin" "2.19.0"
     "@typescript-eslint/parser" "2.19.0"
     eslint-config-prettier "6.10.0"
     eslint-plugin-import "2.20.1"
-    eslint-plugin-jest "23.6.0"
+    eslint-plugin-jest "23.7.0"
     eslint-plugin-prettier "3.1.2"
 
 eslint-import-resolver-node@^0.3.2:
@@ -903,13 +903,12 @@ eslint-plugin-import@2.20.1:
     read-pkg-up "^2.0.0"
     resolve "^1.12.0"
 
-eslint-plugin-jest@23.6.0:
-  version "23.6.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-23.6.0.tgz#508b32f80d44058c8c01257c0ee718cfbd521e9d"
-  integrity sha512-GH8AhcFXspOLqak7fqnddLXEJsrFyvgO8Bm60SexvKSn1+3rWYESnCiWUOCUcBTprNSDSE4CtAZdM4EyV6gPPw==
+eslint-plugin-jest@23.7.0:
+  version "23.7.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-23.7.0.tgz#84d5603b6e745b59898cb6750df6a44782a39b04"
+  integrity sha512-zkiyGlvJeHNjAEz8FaIxTXNblJJ/zj3waNbYbgflK7K6uy0cpE5zJBt/JpJtOBGM/UGkC6BqsQ4n0y7kQ2HA8w==
   dependencies:
     "@typescript-eslint/experimental-utils" "^2.5.0"
-    micromatch "^4.0.2"
 
 eslint-plugin-prettier@3.1.2:
   version "3.1.2"
