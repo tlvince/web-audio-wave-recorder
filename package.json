@@ -33,7 +33,7 @@
   "devDependencies": {
     "@commitlint/config-conventional": "9.0.1",
     "commitlint": "9.0.1",
-    "eslint": "7.3.1",
+    "eslint": "7.4.0",
     "eslint-config-tlvince": "2.2.5",
     "husky": "4.2.5",
     "lint-staged": "10.2.11",
