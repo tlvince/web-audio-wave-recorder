@@ -34,7 +34,7 @@
     "@commitlint/config-conventional": "9.1.2",
     "commitlint": "9.1.2",
     "eslint": "7.7.0",
-    "eslint-config-tlvince": "2.2.22",
+    "eslint-config-tlvince": "2.2.25",
     "husky": "4.2.5",
     "lint-staged": "10.2.11",
     "prettier": "2.0.5",
