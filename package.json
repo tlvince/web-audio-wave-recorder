@@ -37,7 +37,7 @@
     "eslint-config-tlvince": "2.2.25",
     "husky": "4.2.5",
     "lint-staged": "10.2.11",
-    "prettier": "2.0.5",
+    "prettier": "2.1.0",
     "rollup": "2.26.5",
     "rollup-plugin-typescript": "1.0.1",
     "tslib": "2.0.1",
