@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/tlvince/web-audio-wave-recorder#readme",
   "devDependencies": {
-    "@commitlint/config-conventional": "11.0.0",
+    "@commitlint/config-conventional": "12.0.0",
     "commitlint": "11.0.0",
     "eslint": "7.20.0",
     "eslint-config-tlvince": "2.2.27",
